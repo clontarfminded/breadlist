@@ -1,7 +1,7 @@
 {% if latest_classified_list %}
   <ul>
       {% for classified in latest_classified_list %}
-          <li><a href="/{{ classified.locale_name }}/{{ classified.section_name }}/{{ classified.narotype_name }}/">{{ classified.classified_title }}</a></li>
+          <li><a href="/classifieds/{{ classified.locale }}/{{ classified.section }}/{{ classified.narotype }}/{{ classified.id }}">{{ classified.classified_title }}</a></li>
       {% endfor %}
       </ul>
 {% else %}

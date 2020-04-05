@@ -14,25 +14,24 @@ def index(request):
     }
     return render(request, 'classifieds/index.html', context)
 
-def index_locale(request, locale_id):
-    locale = get_object_or_404(Locale, pk=locale_id)
+def index_locale(request, locale_name):
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     context = {
-        'locale': locale,
+        'locale_name': locale_name,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list
     }
     return render(request, 'classifieds/locale-index.html', context)
 
-def index_section(request, locale_id, section_id):
-    response = "hello, you're looking at the index for {} in {}".format(section_id, locale_id)
+def index_section(request, locale_name, section_name):
+    response = "hello, you're looking at the index for {} in {}".format(section_name, locale_name)
     return HttpResponse(response)
 
-def index_subsection(request, locale_id, section_id, subsection_id):
-    response = "hello, you're looking at the index for {} of {} in {}".format(subsection_id, section_id, locale_id)
+def index_subsection(request, locale_name, section_name, subsection_name):
+    response = "hello, you're looking at the index for {} of {} in {}".format(subsection_name, section_name, locale_name)
     return HttpResponse(response)
 
 def detail(request, classified_id):

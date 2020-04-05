@@ -14,10 +14,10 @@
       {% for section in section_list %}
       <section>
         <h2 class="section">{{ section.section_name }}</h2>
-        <a href="{% url 'classifieds:section' section.section_name %}">{{ section.section_name }}</a>
+        <a href="{% url 'classifieds:section' locale_name section.section_name %}">{{ section.section_name }}</a>
         <ul>
           {% for subsection in subsection_list %}
-          <li class="subsection"><a href="{% url 'classifieds:subsection' subsection.id %}">{{ subsection.subsection_name }}</a></li>
+          <li class="subsection"><a href="{% url 'classifieds:subsection' locale_name section.section_name subsection.subsection_name %}">{{ subsection.subsection_name }}</a></li>
           {% endfor %}
         </ul>
       </section>

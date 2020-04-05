@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from django.template import loader
 from .models import Classified
@@ -22,11 +22,6 @@ def index_subsection(request, locale_name, section_name, subsection_name):
     response = "hello, you're looking at the index for {} of {} in {}".format(subsection_name, section_name, locale_name)
     return HttpResponse(response)
 
-def classified_detail(request, locale_name, section_name, subsection_name, classified_id):
-    context = {
-        'locale_name': locale_name,
-        'section_name': section_name,
-        'subsection_name': subsection_name,
-        'classified_id': classified_id
-    }
-    return render(request, 'classifieds/detail.html', context)
+def detail(request, classified_id):
+    classified = get_object_or_404(Classified, pk=classified_id)
+    return render(request, 'classifieds/detail.html', {'classified': classified})

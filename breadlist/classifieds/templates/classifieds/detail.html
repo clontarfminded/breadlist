@@ -1,6 +1,5 @@
-<h1>Breadlist</h1>
-<h2>{{ section_name }}/{{ subsection_name }}</h2>
-<h3>{{ classified_title }}</h3>
-<p>{{ classified_text }}</p>
-<a href="/classifieds/{{ classified.locale }}/{{ classified.section }}/{{ classified.subsection }}">back to {{ subsection_name }}</a>
-<a href="/classifieds">home</a>
+<h1>{{ classified.classified_title }}</h1>
+<p>{{ classified.classified_text }}</p>
+<li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ classified.subsection }}</a></li>
+<li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ classified.section }}</a></li>
+<li><a href="{% url 'classifieds:index' %}">back to index</a></li>

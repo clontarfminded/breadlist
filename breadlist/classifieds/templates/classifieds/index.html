@@ -7,16 +7,15 @@
   <body>
     <header>
       <h1>Breadlist</h1>
+      <h2>Index</h2>
     </header>
     <nav>
     </nav>
-    <main>
-      {% for locale in locale_list %}
+    <main>{% for locale in locale_list %}
       <section>
-        <h2 class="locale">{{ locale.locale_name }}</h2>
+        <h3 class="locale">{{ locale.locale_name }}</h3>
         <a href="{% url 'classifieds:locale' locale.locale_name %}">{{ locale.locale_name }}</a>
-      </section>
-      {% endfor %}
+      </section>{% endfor %}
       <aside>
       </aside>
     </main>

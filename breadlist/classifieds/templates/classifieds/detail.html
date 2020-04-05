@@ -1,5 +1,14 @@
-<h1>{{ classified.classified_title }}</h1>
-<p>{{ classified.classified_text }}</p>
-<li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ classified.subsection }}</a></li>
-<li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ classified.section }}</a></li>
-<li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ classified.classified_title }}</title>
+  </head>
+  <body>
+    <h1>{{ classified.classified_title }}</h1>
+    <p>{{ classified.classified_text }}</p>
+    <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ classified.subsection }}</a></li>
+    <li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ classified.section }}</a></li>
+    <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+  </body>
+</html>

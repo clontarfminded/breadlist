@@ -1,9 +1,24 @@
-{% if latest_classified_list %}
-  <ul>
-      {% for classified in latest_classified_list %}
-          <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Breadlist: Index</title>
+  </head>
+  <body>
+    <header>
+      <h1>Breadlist</h1>
+    </header>
+    <nav>
+    </nav>
+    <main>
+      {% for locale in locale_list %}
+      <section>
+        <h2 class="locale">{{ locale.locale_name }}</h2>
+        <a href="{% url 'classifieds:locale' locale.locale_name %}">{{ locale.locale_name }}</a>
+      </section>
       {% endfor %}
-      </ul>
-{% else %}
-    <p>No classifieds are available.</p>
-{% endif %}
+      <aside>
+      </aside>
+    </main>
+  </body>
+</html>

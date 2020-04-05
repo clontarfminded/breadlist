@@ -18,10 +18,10 @@ class Section(models.Model):
     def __str__(self):
         return self.section_name
 
-class Narotype(models.Model):
-    narotype_name = models.CharField(max_length=200)
+class Subsection(models.Model):
+    subsection_name = models.CharField(max_length=200)
     def __str__(self):
-        return self.narotype_name
+        return self.subsection_name
 
 class Classified(models.Model):
     classified_title = models.CharField(max_length=200)
@@ -29,7 +29,7 @@ class Classified(models.Model):
     datetime_created = models.DateTimeField(auto_now=False, auto_now_add=True)
     locale = models.ForeignKey('Locale', on_delete=models.CASCADE)
     section = models.ForeignKey('Section', on_delete=models.CASCADE)
-    narotype = models.ForeignKey('Narotype', on_delete=models.CASCADE)
+    subsection = models.ForeignKey('subsection', on_delete=models.CASCADE)
     def __str__(self):
         return self.classified_title
     def was_created_recently(self):

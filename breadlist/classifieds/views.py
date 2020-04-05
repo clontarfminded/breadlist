@@ -18,15 +18,15 @@ def index_section(request, locale_name, section_name):
     response = "hello, you're looking at the index for {} in {}".format(section_name, locale_name)
     return HttpResponse(response)
 
-def index_narotype(request, locale_name, section_name, narotype_name):
-    response = "hello, you're looking at the index for {} of {} in {}".format(narotype_name, section_name, locale_name)
+def index_subsection(request, locale_name, section_name, subsection_name):
+    response = "hello, you're looking at the index for {} of {} in {}".format(subsection_name, section_name, locale_name)
     return HttpResponse(response)
 
-def classified_detail(request, locale_name, section_name, narotype_name, classified_id):
+def classified_detail(request, locale_name, section_name, subsection_name, classified_id):
     context = {
         'locale_name': locale_name,
         'section_name': section_name,
-        'narotype_name': narotype_name,
+        'subsection_name': subsection_name,
         'classified_id': classified_id
     }
     return render(request, 'classifieds/detail.html', context)

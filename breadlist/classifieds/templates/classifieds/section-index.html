@@ -12,11 +12,15 @@
     <nav>
     </nav>
     <main>{% if section_classified_list %}
-    <ul>
-    {% for classified in section_classified_list %}
-        <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No classifieds are available.</p>
-{% endif %}
+      <ul>
+      {% for classified in section_classified_list %}
+          <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>{% endfor %}
+      </ul>{% else %}
+      <p>No classifieds are available.</p>{% endif %}
+    </main>
+    <footer>
+      <li><a href="{% url 'classifieds:locale' locale_name %}">back to {{ locale_name }}</a></li>
+      <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+    </footer>
+  </body>
+</html>

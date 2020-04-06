@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Breadlist: {{ section_name }} {{ subsection_name}} in {{ locale_name }}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Breadlist</h1>
+      <h2>{{ locale_name }}: {{ section_name }}: {{ subsection_name }}</h2>
+    </header>
+    <nav>
+    </nav>
+    <main>{% if subsection_classified_list %}
+    <ul>{% for classified in subsection_classified_list %}
+        <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>{% endfor %}
+    </ul>{% else %}
+    <p>No classifieds are available.</p>{% endif %}
+    </main>
+    <footer>
+      <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+    </footer>
+  </body>
+</html>

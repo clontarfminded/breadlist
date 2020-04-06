@@ -13,8 +13,7 @@
     </nav>
     <main>{% for locale in locale_list %}
       <section>
-        <h3 class="locale">{{ locale.locale_name }}</h3>
-        <a href="{% url 'classifieds:locale' locale.locale_name %}">{{ locale.locale_name }}</a>
+        <h3 class="locale"><a href="{% url 'classifieds:locale' locale.locale_name %}">{{ locale.locale_name }}</a></h3>
       </section>{% endfor %}
       <aside>
       </aside>

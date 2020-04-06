@@ -14,17 +14,17 @@
     <main>
       {% for section in section_list %}
       <section>
-        <h3 class="section">{{ section.section_name }}</h3>
-        <a href="{% url 'classifieds:section' locale_name section.section_name %}">{{ section.section_name }}</a>
+        <h3 class="section"><a href="{% url 'classifieds:section' locale_name section.section_name %}">{{ section.section_name }}</a></h3>
         <ul>
           {% for subsection in subsection_list %}
-          <li class="subsection"><a href="{% url 'classifieds:subsection' locale_name section.section_name subsection.subsection_name %}">{{ subsection.subsection_name }}</a></li>
-          {% endfor %}
+          <li class="subsection"><a href="{% url 'classifieds:subsection' locale_name section.section_name subsection.subsection_name %}">{{ subsection.subsection_name }}</a></li>{% endfor %}
         </ul>
-      </section>
-      {% endfor %}
+      </section>{% endfor %}
       <aside>
       </aside>
     </main>
+    <footer>
+      <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+    </footer>
   </body>
 </html>

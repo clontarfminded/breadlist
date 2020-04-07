@@ -60,3 +60,6 @@ def index_subsection(request, locale_name, section_name, subsection_name):
 def detail(request, classified_id):
     classified = get_object_or_404(Classified, pk=classified_id)
     return render(request, 'classifieds/detail.html', {'classified': classified})
+
+def create_classified(request):
+    pass

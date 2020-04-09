@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Breadlist: {{ section_name }} in {{ locale_name }}</title>
+    <title>Breadlist: {{ section_name }} in {{ locale_name }}</title>{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'classifieds/style.css' %}">
   </head>
   <body>
     <header>
-      <h1>Breadlist</h1>
-      <h2>{{ locale_name }}: {{ section_name }}</h2>
+      <h2><a href="{% url 'classifieds:locale' locale_name %}">{{ locale_name }}</a></h2>
+      <h3>{{ section_name }}</h3>
     </header>
     <nav>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
     </nav>
     <main>{% if section_classified_list %}
       <ul>
@@ -18,6 +20,9 @@
       </ul>{% else %}
       <p>No classifieds are available.</p>{% endif %}
     </main>
+    <aside>{% for l in locale_list %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l.locale_name %}">{{ l.locale_name }}</a></li>{% endfor %}
+    </aside>
     <footer>
       <li><a href="{% url 'classifieds:locale' locale_name %}">back to {{ locale_name }}</a></li>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>

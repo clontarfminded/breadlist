@@ -1,17 +1,29 @@
 from django.db import models
 from django.utils import timezone
 
-class User(models.Model):
-    username = models.CharField(max_length=16)
-    def __str__(self):
-        return self.username
-
 class Locale(models.Model):
     locale_name = models.CharField(max_length=200)
-    state = models.CharField(max_length=200)
+    abbreviation = models.CharField(max_length=8)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    region = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
+    timezone = models.CharField(max_length=200)
     def __str__(self):
         return self.locale_name
+
+class Sublocale(models.Model):
+    sublocale_name = models.CharField(max_length=200)
+    abbreviation = models.CharField(max_length=8)
+    latitude = models.FloatField()
+    longitude = models.FloatField()
+    region = models.CharField(max_length=200)
+    country = models.CharField(max_length=200)
+    timezone = models.CharField(max_length=200)
+    parent_locale = models.ForeignKey('Locale', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.sublocale_name
 
 class Section(models.Model):
     section_name = models.CharField(max_length=200)

@@ -7,10 +7,10 @@
   </head>
   <body>
     <header>
-      <h1>Breadlist</h1>
       <h2>{{ locale_name }}</h2>
     </header>
     <nav>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
     </nav>
     <main>
       {% for section in section_list %}
@@ -21,9 +21,10 @@
           <li class="subsection"><a href="{% url 'classifieds:subsection' locale_name section.section_name subsection.subsection_name %}">{{ subsection.subsection_name }}</a></li>{% endfor %}
         </ul>
       </section>{% endfor %}
-      <aside>
-      </aside>
     </main>
+    <aside>{% for l in locale_list %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l.locale_name %}">{{ l.locale_name }}</a></li>{% endfor %}
+    </aside>
     <footer>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
     </footer>

@@ -7,10 +7,10 @@
   </head>
   <body>
     <header>
-      <h1>Breadlist</h1>
-      <h2>Index</h2>
+      <h3>Index</h3>
     </header>
     <nav>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
     </nav>
     <main>{% for locale in locale_list %}
       <section id={{ locale.locale_name }}>

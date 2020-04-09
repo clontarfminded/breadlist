@@ -1,0 +1,28 @@
+sfo pk 1
+
+"SubAreas":[
+{"Abbreviation":"sfc","locale_name":"city of san francisco","ShortDescription":"san francisco","SubAreaID":1},{"Abbreviation":"sby","locale_name":"south bay area","ShortDescription":"south bay","SubAreaID":2},{"Abbreviation":"eby","locale_name":"east bay area","ShortDescription":"east bay","SubAreaID":3},{"Abbreviation":"pen","locale_name":"peninsula","ShortDescription":"peninsula","SubAreaID":4},{"Abbreviation":"nby","locale_name":"north bay / marin","ShortDescription":"north bay","SubAreaID":5},{"Abbreviation":"scz","locale_name":"santa cruz co","ShortDescription":"santa cruz","SubAreaID":6}],
+
+sea pk 2
+"SubAreas":[
+{"abbreviation":"see","locale_name":"seattle","ShortDescription":"seattle","SubAreaID":1},{"abbreviation":"est","locale_name":"eastside","ShortDescription":"eastside","SubAreaID":2},{"abbreviation":"sno","locale_name":"snohomish county","ShortDescription":"snohomish co","SubAreaID":3},{"abbreviation":"kit","locale_name":"kitsap / west puget","ShortDescription":"kitsap co","SubAreaID":4},{"abbreviation":"tac","locale_name":"tacoma / pierce","ShortDescription":"tacoma","SubAreaID":5},{"abbreviation":"oly","locale_name":"olympia / thurston","ShortDescription":"olympia","SubAreaID":6},{"abbreviation":"skc","locale_name":"south king co","ShortDescription":"south king","SubAreaID":7}]
+
+nyc pk 3]
+
+"SubAreas":[
+{"abbreviation":"mnh","locale_name":"manhattan","ShortDescription":"manhattan","SubAreaID":1},{"abbreviation":"brk","locale_name":"brooklyn","ShortDescription":"brooklyn","SubAreaID":2},{"abbreviation":"que","locale_name":"queens","ShortDescription":"queens","SubAreaID":3},{"abbreviation":"brx","locale_name":"bronx","ShortDescription":"bronx","SubAreaID":4},{"abbreviation":"stn","locale_name":"staten island","ShortDescription":"staten island","SubAreaID":5},{"abbreviation":"jsy","locale_name":"new jersey","ShortDescription":"new jersey","SubAreaID":6},{"abbreviation":"lgi","locale_name":"long island","ShortDescription":"long island","SubAreaID":7},{"abbreviation":"wch","locale_name":"westchester","ShortDescription":"westchester","SubAreaID":8},{"abbreviation":"fct","locale_name":"fairfield co, CT","ShortDescription":"fairfield","SubAreaID":9}]
+
+bos pk 4
+
+"SubAreas":[
+{"abbreviation":"gbs","locale_name":"boston/cambridge/brookline","ShortDescription":"boston/camb/brook","SubAreaID":1},{"abbreviation":"nwb","locale_name":"northwest/merrimack","ShortDescription":"northwest/merrimack","SubAreaID":2},{"abbreviation":"bmw","locale_name":"metro west","ShortDescription":"metro west","SubAreaID":3},{"abbreviation":"nos","locale_name":"north shore","ShortDescription":"north shore","SubAreaID":4},{"abbreviation":"sob","locale_name":"south shore","ShortDescription":"south shore","SubAreaID":5}],
+
+lax pk 5
+
+"SubAreas":[
+{"abbreviation":"wst","locale_name":"westside-southbay-310","ShortDescription":"westside-southbay","SubAreaID":1},{"abbreviation":"sfv","locale_name":"san fernando valley","ShortDescription":"SF valley","SubAreaID":2},{"abbreviation":"lac","locale_name":"central LA 213/323","ShortDescription":"central LA","SubAreaID":3},{"abbreviation":"sgv","locale_name":"san gabriel valley","ShortDescription":"san gabriel valley","SubAreaID":4},{"abbreviation":"lgb","locale_name":"long beach / 562","ShortDescription":"long beach / 562","SubAreaID":5},{"abbreviation":"ant","locale_name":"antelope valley","ShortDescription":"antelope valley","SubAreaID":6}]
+
+sdo pk 6
+
+"SubAreas":[
+  {"abbreviation":"csd","locale_name":"city of san diego","ShortDescription":"city of san diego","SubAreaID":1},{"abbreviation":"nsd","locale_name":"north san diego county","ShortDescription":"north SD county","SubAreaID":2},{"abbreviation":"esd","locale_name":"east san diego county","ShortDescription":"east SD county","SubAreaID":3},{"abbreviation":"ssd","locale_name":"south san diego county","ShortDescription":"south SD county","SubAreaID":4}]

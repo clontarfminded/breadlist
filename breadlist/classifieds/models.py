@@ -46,3 +46,9 @@ class Classified(models.Model):
         return self.classified_title
     def was_created_recently(self):
         return self.datetime_created >= timezone.now() - datetime.timedelta(days=1)
+
+class Page(models.Model):
+    page_title = models.CharField(max_length=200)
+    page_text = models.TextField()
+    def __str__(self):
+        return self.page_title

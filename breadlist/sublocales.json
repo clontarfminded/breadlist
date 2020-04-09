@@ -26,3 +26,60 @@ sdo pk 6
 
 "SubAreas":[
   {"abbreviation":"csd","locale_name":"city of san diego","ShortDescription":"city of san diego","SubAreaID":1},{"abbreviation":"nsd","locale_name":"north san diego county","ShortDescription":"north SD county","SubAreaID":2},{"abbreviation":"esd","locale_name":"east san diego county","ShortDescription":"east SD county","SubAreaID":3},{"abbreviation":"ssd","locale_name":"south san diego county","ShortDescription":"south SD county","SubAreaID":4}]
+
+  pdx pk 7
+
+  "SubAreas":[
+      {"abbreviation":"mlt","locale_name":"multnomah county","ShortDescription":"multnomah co","SubAreaID":1},{"abbreviation":"wsc","locale_name":"washington county","ShortDescription":"washington co","SubAreaID":2},{"abbreviation":"clk","locale_name":"clark/cowlitz WA","ShortDescription":"clark/cowlitz","SubAreaID":3},{"abbreviation":"clc","locale_name":"clackamas county","ShortDescription":"clackamas co","SubAreaID":4},{"abbreviation":"nco","locale_name":"north coast","ShortDescription":"north coast","SubAreaID":5},{"abbreviation":"yam","locale_name":"yamhill co","ShortDescription":"yamhill co","SubAreaID":6},{"abbreviation":"grg","locale_name":"columbia gorge","ShortDescription":"columbia gorge","SubAreaID":7}]
+
+wdc pk 8
+
+"SubAreas":[
+{"abbreviation":"doc","locale_name":"district of columbia","ShortDescription":"district of columbia","SubAreaID":1},{"abbreviation":"nva","locale_name":"northern virginia","ShortDescription":"northern virginia","SubAreaID":2},{"abbreviation":"mld","locale_name":"maryland","ShortDescription":"maryland","SubAreaID":3}]
+
+chc pk 9
+
+SubAreas":[
+            {"abbreviation":"chc","locale_name":"city of chicago","ShortDescription":"city of chicago","SubAreaID":1},{"abbreviation":"nch","locale_name":"north chicagoland","ShortDescription":"north chicagoland","SubAreaID":2},{"abbreviation":"wcl","locale_name":"west chicagoland","ShortDescription":"west chicagoland","SubAreaID":3},{"abbreviation":"sox","locale_name":"south chicagoland","ShortDescription":"south chicagoland","SubAreaID":4},{"abbreviation":"nwi","locale_name":"northwest indiana","ShortDescription":"northwest indiana","SubAreaID":5},{"abbreviation":"nwc","locale_name":"northwest suburbs","ShortDescription":"northwest suburbs","SubAreaID":6}]
+
+atl pk 12
+
+"SubAreas":[
+              {"abbreviation":"atl","locale_name":"city of atlanta","ShortDescription":"atlanta","SubAreaID":1},{"abbreviation":"nat","locale_name":"otp north","ShortDescription":"otp north","SubAreaID":2},{"abbreviation":"eat","locale_name":"otp east","ShortDescription":"otp east","SubAreaID":3},{"abbreviation":"sat","locale_name":"otp south","ShortDescription":"otp south","SubAreaID":4},{"abbreviation":"wat","locale_name":"otp west","ShortDescription":"otp west","SubAreaID":5}]
+
+vancouver pk 14
+
+"SubAreas":[
+                  {"abbreviation":"van","locale_name":"city of vancouver","ShortDescription":"vancouver","SubAreaID":1},{"abbreviation":"nvn","locale_name":"north shore","ShortDescription":"north shore","SubAreaID":2},{"abbreviation":"bnc","locale_name":"burnaby/newwest","ShortDescription":"burnaby/newwest","SubAreaID":3},{"abbreviation":"rds","locale_name":"delta/surrey/langley","ShortDescription":"delta/surrey/langley","SubAreaID":4},{"abbreviation":"pml","locale_name":"tricities/pitt/maple","ShortDescription":"tricities/pitt/maple","SubAreaID":5},{"abbreviation":"rch","locale_name":"richmond","ShortDescription":"richmond","SubAreaID":6}]
+
+Phoenix
+"SubAreas":[
+                    {"abbreviation":"cph","locale_name":"central/south phx","ShortDescription":"central/south phx","SubAreaID":1},{"abbreviation":"evl","locale_name":"east valley","ShortDescription":"east valley","SubAreaID":2},{"abbreviation":"nph","locale_name":"phx north","ShortDescription":"phx north","SubAreaID":3},{"abbreviation":"wvl","locale_name":"west valley","ShortDescription":"west valley","SubAreaID":4}]
+
+minneapolis
+"SubAreas":[
+                      {"abbreviation":"hnp","locale_name":"hennepin county","ShortDescription":"hennepin co","SubAreaID":1},{"abbreviation":"ram","locale_name":"ramsey county","ShortDescription":"ramsey co","SubAreaID":2},{"abbreviation":"ank","locale_name":"anoka/chisago/isanti","ShortDescription":"anok/chis/isa","SubAreaID":3},{"abbreviation":"wsh","locale_name":"washington co / WI","ShortDescription":"washington/WI","SubAreaID":4},{"abbreviation":"dak","locale_name":"dakota / scott","ShortDescription":"dakota/scott","SubAreaID":5},{"abbreviation":"csw","locale_name":"carver/sherburne/wright","ShortDescription":"carv/sher/wri","SubAreaID":6}]
+
+south florida
+"SubAreas":[
+                        {"abbreviation":"mdc","locale_name":"miami / dade county","ShortDescription":"miami / dade","SubAreaID":1},{"abbreviation":"brw","locale_name":"broward county","ShortDescription":"broward county","SubAreaID":2},{"abbreviation":"pbc","locale_name":"palm beach county","ShortDescription":"palm beach co","SubAreaID":3}]
+
+dallas
+
+"SubAreas":[
+                          {"abbreviation":"dal","locale_name":"dallas","ShortDescription":"dallas","SubAreaID":1},{"abbreviation":"ftw","locale_name":"fort worth","ShortDescription":"fort worth","SubAreaID":2},{"abbreviation":"mdf","locale_name":"mid cities","ShortDescription":"mid cities","SubAreaID":3},{"abbreviation":"ndf","locale_name":"north DFW","ShortDescription":"north DFW","SubAreaID":4},{"abbreviation":"sdf","locale_name":"south DFW","ShortDescription":"south DFW","SubAreaID":5}]
+
+detroit
+
+"SubAreas":[
+                            {"abbreviation":"mcb","locale_name":"macomb county","ShortDescription":"macomb co","SubAreaID":1},{"abbreviation":"wyn","locale_name":"wayne county","ShortDescription":"wayne co","SubAreaID":2},{"abbreviation":"okl","locale_name":"oakland county","ShortDescription":"oakland co","SubAreaID":3}],
+
+Toronto
+
+"SubAreas":[
+                              {"abbreviation":"tor","locale_name":"city of toronto","ShortDescription":"city of toronto","SubAreaID":1},{"abbreviation":"drh","locale_name":"durham region","ShortDescription":"durham region","SubAreaID":2},{"abbreviation":"yrk","locale_name":"york region","ShortDescription":"york region","SubAreaID":3},{"abbreviation":"bra","locale_name":"brampton-caledon","ShortDescription":"brampton","SubAreaID":4},{"abbreviation":"mss","locale_name":"mississauga","ShortDescription":"mississauga","SubAreaID":5},{"abbreviation":"oak","locale_name":"oakville-milton","ShortDescription":"oakville","SubAreaID":6}]
+
+hawaii
+
+"SubAreas":[
+                                {"abbreviation":"oah","locale_name":"oahu","ShortDescription":"oahu","SubAreaID":1},{"abbreviation":"big","locale_name":"big island","ShortDescription":"big island","SubAreaID":2},{"abbreviation":"mau","locale_name":"maui","ShortDescription":"maui","SubAreaID":3},{"abbreviation":"kau","locale_name":"kauai","ShortDescription":"kauai","SubAreaID":4},{"abbreviation":"mol","locale_name":"molokai","ShortDescription":"molokai","SubAreaID":5}]

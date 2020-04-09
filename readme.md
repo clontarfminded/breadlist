@@ -1,5 +1,5 @@
-# Breadlist
+## Breadlist is a classifieds website for Mutual Aid.
 
-## A classified webapp for mutual aid
+Intended to be a simple and easy to use means of directly connecting people in communities.
 
-kind of a mess right now 
+Users can post "Needed" or "Available" classifieds for a variety of categories, from Water to PPE to Friendship. We can also post resources or organizations relevant to the categories.

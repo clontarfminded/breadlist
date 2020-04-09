@@ -9,6 +9,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   grid-template-rows: 1fr 10fr 1fr;
+  grid-template-columns: repeat(12 1fr);
+  grid-template-rows: repeat(12 1fr);
+  grid-template-areas: "n h h h h a"
+                        "n m m m m a"
+                        "n m m m m a"
+                        "n m m m m a"
+                        "n m m m m a"
+                        "n m m m m a"
+                        "n f f f f a"
   margin: .5em;
 }
 header {

@@ -12,12 +12,13 @@
       <h4>{{ subsection_name }}</h4>
     </header>
     <nav>
-      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
+      <li id={{ page.page_name }}><a href="{% url 'classifieds:page' page.page_name %}">{{ page.page_name }}</a></li>{% endfor %}
     </nav>
     <main>{% if subsection_classified_list %}
-    <ul>{% for classified in subsection_classified_list %}
-        <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>{% endfor %}
-    </ul>{% else %}
+      <ul>{% for classified in subsection_classified_list %}
+          <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>{% endfor %}
+      </ul>{% else %}
     <p>No classifieds are available.</p>{% endif %}
     </main>
     <aside>{% for l in locale_list %}

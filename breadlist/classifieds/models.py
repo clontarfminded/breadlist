@@ -48,7 +48,7 @@ class Classified(models.Model):
         return self.datetime_created >= timezone.now() - datetime.timedelta(days=1)
 
 class Page(models.Model):
-    page_title = models.CharField(max_length=200)
+    page_name = models.CharField(max_length=200)
     page_text = models.TextField()
     def __str__(self):
-        return self.page_title
+        return self.page_name

@@ -10,16 +10,17 @@
       <h2>{{ locale }}</h2>
     </header>
     <nav>
-      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
-      <li id={{ page }}><a href="{% url 'classifieds:page' page %}">{{ page }}</a></li>{% endfor %}
+      <img id="kropotkin" src="{% static "classifieds/images/kropotkin.jpg" %}" alt="the face of peter kropotkin done in a woodblock style"></img>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for p in page_list %}
+      <li id={{ p }}><a href="{% url 'classifieds:page' p.page_name %}">{{ p }}</a></li>{% endfor %}
     </nav>
     <main>
-      {% for section in section_list %}
-      <section class={{ section }}>
-        <h3 class="section"><a href="{% url 'classifieds:section' locale section %}">{{ section.section }}</a></h3>
+      {% for s in section_list %}
+      <section class={{ s }}>
+        <h3 class="section"><a href="{% url 'classifieds:section' locale s %}">{{ s}}</a></h3>
         <ul>
-          {% for subsection in subsection_list %}
-          <li class="subsection"><a href="{% url 'classifieds:subsection' locale section subsection %}">{{ subsection }}</a></li>{% endfor %}
+          {% for ss in subsection_list %}
+          <li class="subsection"><a href="{% url 'classifieds:subsection' locale s ss %}">{{ ss }}</a></li>{% endfor %}
         </ul>
       </section>{% endfor %}
     </main>

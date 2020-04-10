@@ -31,7 +31,7 @@ def locale_index(request, locale):
     return render(request, 'classifieds/locale-index.html', context)
 
 def section_index(request, locale, section):
-    section_classified_list = Classified.objects.filter(locale=locale).filter(section=section).order_by('datetime_created')
+    section_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).order_by('datetime_created')
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -48,7 +48,7 @@ def section_index(request, locale, section):
     return render(request, 'classifieds/section-index.html', context)
 
 def subsection_index(request, locale, section, subsection):
-    subsection_classified_list = Classified.objects.filter(locale=locale).filter(section=section).filter(subsection=subsection).order_by('datetime_created')
+    subsection_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).filter(subsection__subsection_name=subsection).order_by('datetime_created')
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -65,7 +65,7 @@ def subsection_index(request, locale, section, subsection):
     }
     return render(request, 'classifieds/subsection-index.html', context)
 
-def detail(request, classified_id):
+def detail(request, locale, section, subsection, classified_id):
     classified = get_object_or_404(Classified, pk=classified_id)
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
@@ -73,6 +73,9 @@ def detail(request, classified_id):
     page_list = Page.objects.order_by('pk')
     context = {
         'classified': classified,
+        'locale': locale,
+        'section': section,
+        'subsection': subsection,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -80,8 +83,8 @@ def detail(request, classified_id):
     }
     return render(request, 'classifieds/detail.html', context)
 
-def page(request, page):
-    page = get_object_or_404(Page, pk=page.id)
+def page(request, page_name):
+    page = get_object_or_404(Page, page_name=page_name)
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')

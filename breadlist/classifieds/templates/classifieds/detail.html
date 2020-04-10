@@ -2,17 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ classified.classified_title }}</title>{% load static %}
+    <title>{{ classified }}</title>{% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'classifieds/style.css' %}">
   </head>
   <body>
+    <header>
+      <h1>{{ classified }}</h1>
+    </header>
+    <nav>
+      <img id="kropotkin" src="{% static "classifieds/images/kropotkin.jpg" %}" alt="the face of peter kropotkin done in a woodblock style"></img>
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
+      <li id={{ page }}><a href="{% url 'classifieds:page' page %}">{{ page }}</a></li>{% endfor %}
+    </nav>
     <main>
-      <h1>{{ classified.classified_title }}</h1>
       <p>{{ classified.classified_text }}</p>
     </main>
+    <aside>{% for l in locale_list %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></li>{% endfor %}
+    </aside>
     <footer>
-      <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ classified.subsection }}</a></li>
-      <li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ classified.section }}</a></li>
+      <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ subsection }}</a></li>
+      <li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ section }}</a></li>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
     </footer>
   </body>

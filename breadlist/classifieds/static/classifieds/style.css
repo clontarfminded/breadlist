@@ -29,6 +29,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   max-height: 200em;
+  padding: 1em;
 }
 nav {
   border: 1px solid black;
@@ -57,4 +58,8 @@ h1 {
   padding: .5em;
 }
 h2 {
+}
+#kropotkin {
+  height: 150px;
+  width: 150px;
 }

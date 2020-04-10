@@ -16,30 +16,30 @@ def index(request):
     }
     return render(request, 'classifieds/index.html', context)
 
-def locale_index(request, locale_name):
+def locale_index(request, locale):
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
     context = {
+        'locale': locale,
         'page_list': page_list,
-        'locale_name': locale_name,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list
     }
     return render(request, 'classifieds/locale-index.html', context)
 
-def section_index(request, locale_name, section_name):
-    section_classified_list = Classified.objects.filter(locale__locale_name=locale_name).filter(section__section_name=section_name).order_by('datetime_created')
+def section_index(request, locale, section):
+    section_classified_list = Classified.objects.filter(locale=locale).filter(section=section).order_by('datetime_created')
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
     context = {
+        'locale': locale,
+        'section': section,
         'page_list': page_list,
-        'locale_name': locale_name,
-        'section_name': section_name,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -47,17 +47,17 @@ def section_index(request, locale_name, section_name):
     }
     return render(request, 'classifieds/section-index.html', context)
 
-def subsection_index(request, locale_name, section_name, subsection_name):
-    subsection_classified_list = Classified.objects.filter(locale__locale_name=locale_name).filter(section__section_name=section_name).filter(subsection__subsection_name=subsection_name).order_by('datetime_created')
+def subsection_index(request, locale, section, subsection):
+    subsection_classified_list = Classified.objects.filter(locale=locale).filter(section=section).filter(subsection=subsection).order_by('datetime_created')
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
     context = {
         'page_list': page_list,
-        'locale_name': locale_name,
-        'section_name': section_name,
-        'subsection_name': subsection_name,
+        'locale': locale,
+        'section': section,
+        'subsection': subsection,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -80,8 +80,8 @@ def detail(request, classified_id):
     }
     return render(request, 'classifieds/detail.html', context)
 
-def page(request, page_id):
-    page = get_object_or_404(Page, pk=page_id)
+def page(request, page):
+    page = get_object_or_404(Page, pk=page.id)
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')

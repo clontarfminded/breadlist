@@ -2,29 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Breadlist Index: {{ locale_name }}</title>{% load static %}
+    <title>Breadlist Index: {{ locale }}</title>{% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'classifieds/style.css' %}">
   </head>
   <body>
     <header>
-      <h2>{{ locale_name }}</h2>
+      <h2>{{ locale }}</h2>
     </header>
     <nav>
       <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
-      <li id={{ page.page_name }}><a href="{% url 'classifieds:page' page.page_name %}">{{ page.page_name }}</a></li>{% endfor %}
+      <li id={{ page }}><a href="{% url 'classifieds:page' page %}">{{ page }}</a></li>{% endfor %}
     </nav>
     <main>
       {% for section in section_list %}
-      <section class={{ section.section_name }}>
-        <h3 class="section"><a href="{% url 'classifieds:section' locale_name section.section_name %}">{{ section.section_name }}</a></h3>
+      <section class={{ section }}>
+        <h3 class="section"><a href="{% url 'classifieds:section' locale section %}">{{ section.section }}</a></h3>
         <ul>
           {% for subsection in subsection_list %}
-          <li class="subsection"><a href="{% url 'classifieds:subsection' locale_name section.section_name subsection.subsection_name %}">{{ subsection.subsection_name }}</a></li>{% endfor %}
+          <li class="subsection"><a href="{% url 'classifieds:subsection' locale section subsection %}">{{ subsection }}</a></li>{% endfor %}
         </ul>
       </section>{% endfor %}
     </main>
     <aside>{% for l in locale_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l.locale_name %}">{{ l.locale_name }}</a></li>{% endfor %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></li>{% endfor %}
     </aside>
     <footer>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>

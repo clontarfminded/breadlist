@@ -2,27 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Breadlist: {{ section_name }} {{ subsection_name}} in {{ locale_name }}</title>{% load static %}
+    <title>Breadlist: {{ section }} {{ subsection}} in {{ locale }}</title>{% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'classifieds/style.css' %}">
   </head>
   <body>
     <header>
-      <h2><a href="{% url 'classifieds:locale' locale_name %}"> {{ locale_name }} </a></h2>
-      <h3><a href="{% url 'classifieds:section' locale_name section_name %}"> {{ section_name }}: </a></h3>
-      <h4>{{ subsection_name }}</h4>
+      <h2><a href="{% url 'classifieds:locale' locale %}"> {{ locale }} </a></h2>
+      <h3><a href="{% url 'classifieds:section' locale section %}"> {{ section }}: </a></h3>
+      <h4>{{ subsection }}</h4>
     </header>
     <nav>
       <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
-      <li id={{ page.page_name }}><a href="{% url 'classifieds:page' page.page_name %}">{{ page.page_name }}</a></li>{% endfor %}
+      <li id={{ page }}><a href="{% url 'classifieds:page' page %}">{{ page }}</a></li>{% endfor %}
     </nav>
     <main>{% if subsection_classified_list %}
       <ul>{% for classified in subsection_classified_list %}
-          <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified.classified_title }}</a></li>{% endfor %}
+          <li><a href="{% url 'classifieds:detail' classified.id %}">{{ classified }}</a></li>{% endfor %}
       </ul>{% else %}
     <p>No classifieds are available.</p>{% endif %}
     </main>
     <aside>{% for l in locale_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l.locale_name %}">{{ l.locale_name }}</a></li>{% endfor %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></li>{% endfor %}
     </aside>
     <footer>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>

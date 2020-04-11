@@ -1,0 +1,713 @@
+Abbreviation,Locale_name,Region,Area
+zur,zurich,Switzerland,Europe
+zyl,zanesville / cambridge,Ohio,US
+zam,zamboanga,Philippines,Asia Pacific and Middle East
+yum,yuma,Arizona,US
+yuc,yucatan,Mexico,Latin America and Caribbean
+ybs,yuba-sutter,California,US
+yng,youngstown,Ohio,US
+yrk,york PA,Pennsylvania,US
+ykf,yellowknife,Northwest Territories,Canada
+yak,yakima,Washington,US
+xiy,xi'an,China,Asia Pacific and Middle East
+wyo,wyoming,Wyoming,US
+wuh,wuhan,China,Asia Pacific and Middle East
+wor,worcester / central MA,Massachusetts,US
+wol,wollongong,Australia,Oceania
+wsl,winston-salem,North Carolina,US
+win,winnipeg,Manitoba,Canada
+wsr,windsor,Ontario,Canada
+okv,winchester,Virginia,US
+wnc,wilmington NC,North Carolina,US
+wpt,williamsport,Pennsylvania,US
+wtf,wichita falls,Texas,US
+wic,wichita,Kansas,US
+whh,whitehorse,Yukon Territory,Canada
+whi,whistler BC,British Columbia,Canada
+gjt,western slope,Colorado,US
+wma,western massachusetts,Massachusetts,US
+wmd,western maryland,Maryland,US
+wky,western KY,Kentucky,US
+qcy,western IL,Illinois,US
+wva,west virginia (old),West Virginia,US
+mia,west palm beach,Florida,US
+pal,west bank,Israel and Palestine,Asia Pacific and Middle East
+wen,wenatchee,Washington,US
+wll,wellington,New Zealand,Oceania
+wau,wausau,Wisconsin,US
+wtn,watertown,New York,US
+wlo,waterloo / cedar falls,Iowa,US
+wdc,washington DC,District of Columbia,US
+wco,waco,Texas,US
+vis,visalia-tulare,California,US
+vrg,virgin islands,Territories,US
+vrg,virgin islands,Virgin Islands U.S.,Latin America and Caribbean
+vtn,vietnam,Vietnam,Asia Pacific and Middle East
+vtx,victoria TX,Texas,US
+vic,victoria,British Columbia,Canada
+brl,vermont,Vermont,US
+vcz,veracruz,Mexico,Latin America and Caribbean
+oxr,ventura county,California,US
+vce,venice / veneto,Italy,Europe
+ccs,venezuela,Venezuela,Latin America and Caribbean
+van,vancouver BC,British Columbia,Canada
+val,valencia,Spain,Europe
+vld,valdosta,Georgia,US
+uti,utica-rome-oneida,New York,US
+yup,upper peninsula,Michigan,US
+uae,united arab emirates,United Arab Emirates,Asia Pacific and Middle East
+kbp,ukraine,Ukraine,Europe
+etx,tyler / east TX,Texas,US
+tts,twin tiers NY/PA,New York,US
+twf,twin falls,Idaho,US
+nph,tuscarawas co,Ohio,US
+tsc,tuscaloosa,Alabama,US
+ist,turkey,Turkey,Europe
+tun,tunisia,Tunisia,Africa
+tul,tulsa,Oklahoma,US
+tus,tucson,Arizona,US
+trs,trois-rivieres,Quebec,Canada
+tri,tri-cities TN,Tennessee,US
+psl,treasure coast,Florida,US
+tls,toulouse,France,Europe
+tor,toronto,Ontario,Canada
+trn,torino,Italy,Europe
+tpk,topeka,Kansas,US
+tol,toledo,Ohio,US
+tok,tokyo,Japan,Asia Pacific and Middle East
+tij,tijuana,Mexico,Latin America and Caribbean
+tby,thunder bay,Ontario,Canada
+thb,the thumb,Michigan,US
+bkk,thailand,Thailand,Asia Pacific and Middle East
+txm,texoma,Texas,US
+txk,texarkana,Arkansas,US
+toc,territories,Northwest Territories,Canada
+tha,terre haute,Indiana,US
+tlv,tel aviv,Israel and Palestine,Asia Pacific and Middle East
+hba,tasmania,Australia,Oceania
+tpa,tampa bay area,Florida,US
+tal,tallahassee,Florida,US
+twd,taiwan,Taiwan,Asia Pacific and Middle East
+syr,syracuse,New York,US
+syd,sydney,Australia,Oceania
+sth,sweden,Sweden,Europe
+ssn,susanville,California,US
+svt,surat surat,India,Asia Pacific and Middle East
+sun,sunshine coast,British Columbia,Canada
+sud,sudbury,Ontario,Canada
+str,stuttgart,Germany,Europe
+sxb,strasbourg,France,Europe
+stk,stockton,California,US
+osu,stillwater,Oklahoma,US
+tbr,statesboro,Georgia,US
+psu,state college,Pennsylvania,US
+stp,st petersburg,Russian Federation,Europe
+stl,st louis MO,Missouri,US
+stj,st joseph,Missouri,US
+nfl,st john's NL,Newfoundland and Labrador,Canada
+stg,st george,Utah,US
+stc,st cloud,Minnesota,US
+ust,st augustine,Florida,US
+sgf,springfield MO,Missouri,US
+spi,springfield IL,Illinois,US
+spk,spokane / coeur d'alene,Washington,US
+mlb,space coast,Florida,US
+vaw,southwest VA,Virginia,US
+wtx,southwest TX,Texas,US
+hez,southwest MS,Mississippi,US
+mml,southwest MN,Minnesota,US
+swm,southwest michigan,Michigan,US
+swk,southwest KS,Kansas,US
+swv,southern WV,West Virginia,US
+smd,southern maryland,Maryland,US
+cbd,southern illinois,Illinois,US
+smo,southeast missouri,Missouri,US
+sek,southeast KS,Kansas,US
+otu,southeast IA,Iowa,US
+jnu,southeast alaska,Alaska,US
+snj,south jersey,New Jersey,US
+mia,south florida,Florida,US
+sdk,south dakota,South Dakota,US
+sma,south coast,Massachusetts,US
+sbn,south bend / michiana,Indiana,US
+ske,skeena-bulkley,British Columbia,Canada
+mvw,skagit / island / SJI,Washington,US
+ssk,siskiyou county,California,US
+fsd,sioux falls / SE SD,South Dakota,US
+sux,sioux city IA,Iowa,US
+sng,singapore,Singapore,Asia Pacific and Middle East
+fhu,sierra vista,Arizona,US
+sic,sicilia,Italy,Europe
+shv,shreveport,Louisiana,US
+sow,show low,Arizona,US
+shb,sherbrooke,Quebec,Canada
+szx,shenzhen,China,Asia Pacific and Middle East
+she,shenyang,China,Asia Pacific and Middle East
+shf,sheffield,United Kingdom,Europe
+sbm,sheboygan WI,Wisconsin,US
+sha,shanghai,China,Asia Pacific and Middle East
+sfo,SF bay area,California,US
+sev,sevilla,Spain,Europe
+sel,seoul,Korea,Asia Pacific and Middle East
+sdj,sendai,Japan,Asia Pacific and Middle East
+sea,seattle-tacoma,Washington,US
+avp,scranton / wilkes-barre,Pennsylvania,US
+bff,scottsbluff / panhandle,Nebraska,US
+sav,savannah / hinesville,Georgia,US
+soo,sault ste marie ON,Ontario,Canada
+skt,saskatoon,Saskatchewan,Canada
+srn,sarnia,Ontario,Canada
+srd,sardinia,Italy,Europe
+srq,sarasota-bradenton,Florida,US
+spp,sapporo,Japan,Asia Pacific and Middle East
+spo,sao paulo,Brazil,Latin America and Caribbean
+smx,santa maria,California,US
+saf,santa fe / taos,New Mexico,US
+sba,santa barbara,California,US
+sky,sandusky,Ohio,US
+tsu,san marcos,Texas,US
+slo,san luis obispo,California,US
+sdo,san diego,California,US
+sat,san antonio,Texas,US
+sjt,san angelo,Texas,US
+ssa,salvador bahia,Brazil,Latin America and Caribbean
+slc,salt lake city,Utah,US
+sns,salina,Kansas,US
+sle,salem OR,Oregon,US
+sgy,saguenay,Quebec,Canada
+mbs,saginaw-midland-baycity,Michigan,US
+sac,sacramento,California,US
+row,roswell / carlsbad,New Mexico,US
+rbg,roseburg,Oregon,US
+rom,rome,Italy,Europe
+buh,romania,Romania,Europe
+rfd,rockford,Illinois,US
+rcs,rochester NY,New York,US
+rmn,rochester MN,Minnesota,US
+roa,roanoke,Virginia,US
+rio,rio de janeiro,Brazil,Latin America and Caribbean
+rin,richmond IN,Indiana,US
+ric,richmond,Virginia,US
+prv,rhode island,Rhode Island,US
+rkv,reykjavik,Iceland,Europe
+rno,reno / tahoe,Nevada,US
+reg,regina,Saskatchewan,Canada
+rdd,redding,California,US
+red,red deer,Alberta,Canada
+rec,recife,Brazil,Latin America and Caribbean
+rea,reading,Pennsylvania,US
+rap,rapid city / west SD,South Dakota,US
+ral,raleigh / durham / CH,North Carolina,US
+qbc,quebec city,Quebec,Canada
+mli,quad cities IA/IL,Iowa,US
+png,pune,India,Asia Pacific and Middle East
+plm,pullman / moscow,Washington,US
+pvr,puerto vallarta,Mexico,Latin America and Caribbean
+pri,puerto rico,Territories,US
+pri,puerto rico,Puerto Rico,Latin America and Caribbean
+pub,pueblo,Colorado,US
+pbl,puebla,Mexico,Latin America and Caribbean
+pvu,provo / orem,Utah,US
+yxs,prince george,British Columbia,Canada
+pei,prince edward island,Prince Edward Island,Canada
+hpr,pretoria,South Africa,Africa
+prc,prescott,Arizona,US
+ptd,potsdam-canton-massena,New York,US
+pgp,porto alegre,Brazil,Latin America and Caribbean
+pto,porto,Portugal,Europe
+pdx,portland OR,Oregon,US
+phn,port huron,Michigan,US
+waw,poland,Poland,Europe
+poc,poconos,Pennsylvania,US
+plb,plattsburgh-adirondacks,New York,US
+pit,pittsburgh,Pennsylvania,US
+csd,pierre / central SD,South Dakota,US
+phx,phoenix,Arizona,US
+phi,philadelphia,Pennsylvania,US
+ypq,peterborough,Ontario,Canada
+peg,perugia,Italy,Europe
+lim,peru,Peru,Latin America and Caribbean
+per,perth,Australia,Oceania
+pia,peoria,Illinois,US
+pns,pensacola,Florida,US
+pax,peace river country,Alberta,Canada
+pkb,parkersburg-marietta,West Virginia,US
+par,paris,France,Europe
+pfn,panama city FL,Florida,US
+pan,panama,Panama,Latin America and Caribbean
+crk,pampanga,Philippines,Asia Pacific and Middle East
+psp,palm springs CA,California,US
+pak,pakistan,Pakistan,Asia Pacific and Middle East
+ovf,oxford,United Kingdom,Europe
+owb,owensboro,Kentucky,US
+ows,owen sound,Ontario,Canada
+obx,outer banks,North Carolina,US
+ott,ottawa-hull-gatineau,Ontario,Canada
+osa,osaka-kobe-kyoto,Japan,Asia Pacific and Middle East
+orl,orlando,Florida,US
+cor,oregon coast,Oregon,US
+orc,orange county,California,US
+onh,oneonta,New York,US
+oma,omaha / council bluffs,Nebraska,US
+olp,olympic peninsula,Washington,US
+okc,oklahoma city,Oklahoma,US
+oka,okinawa,Japan,Asia Pacific and Middle East
+yps,okaloosa / walton,Florida,US
+ogd,ogden-clearfield,Utah,US
+odm,odessa / midland,Texas,US
+oca,ocala,Florida,US
+oax,oaxaca,Mexico,Latin America and Caribbean
+nue,nuremberg,Germany,Europe
+not,nottingham,United Kingdom,Europe
+osl,norway,Norway,Europe
+end,northwest OK,Oklahoma,US
+nwk,northwest KS,Kansas,US
+nwg,northwest GA,Georgia,US
+nct,northwest CT,Connecticut,US
+nwi,northern WI,Wisconsin,US
+whl,northern panhandle,West Virginia,US
+nmi,northern michigan,Michigan,US
+abr,northeast SD,South Dakota,US
+lbf,north platte,Nebraska,US
+nms,north mississippi,Mississippi,US
+njy,north jersey,New Jersey,US
+ndk,north dakota,North Dakota,US
+lcq,north central FL,Florida,US
+rou,normandy,France,Europe
+nce,nice / cote d'azur,France,Europe
+mga,nicaragua,Nicaragua,Latin America and Caribbean
+nsc,niagara region,Ontario,Canada
+ntl,newcastle NSW,Australia,Oceania
+ncl,newcastle / NE england,United Kingdom,Europe
+nyc,new york city,New York,US
+vpi,new river valley,Virginia,US
+nor,new orleans,Louisiana,US
+hvn,new haven,Connecticut,US
+nhm,new hampshire,New Hampshire,US
+nbw,new brunswick,New Brunswick,Canada
+nsh,nashville,Tennessee,US
+nap,napoli / campania,Italy,Europe
+nkg,nanjing,China,Asia Pacific and Middle East
+nmo,nanaimo,British Columbia,Canada
+ngo,nagoya,Japan,Asia Pacific and Middle East
+myr,myrtle beach,South Carolina,US
+mkg,muskegon,Michigan,US
+muc,munich,Germany,Europe
+mun,muncie / anderson,Indiana,US
+mum,mumbai,India,Asia Pacific and Middle East
+mlk,moses lake,Washington,US
+mos,moscow,Russian Federation,Europe
+cas,morocco,Morocco,Africa
+wvu,morgantown,West Virginia,US
+mon,montreal,Quebec,Canada
+mpl,montpellier,France,Europe
+mgm,montgomery,Alabama,US
+mvd,montevideo,Uruguay,Latin America and Caribbean
+mty,monterrey,Mexico,Latin America and Caribbean
+mtb,monterey bay,California,US
+mnt,montana (old),Montana,US
+mlu,monroe LA,Louisiana,US
+mnr,monroe,Michigan,US
+mhv,mohave county,Arizona,US
+mod,modesto,California,US
+mob,mobile,Alabama,US
+mso,missoula,Montana,US
+min,minneapolis / st paul,Minnesota,US
+mil,milwaukee,Wisconsin,US
+mxp,milan,Italy,Europe
+mex,mexico city,Mexico,Latin America and Caribbean
+mei,meridian,Mississippi,US
+mer,merced,California,US
+mdo,mendocino county,California,US
+mem,memphis TN,Tennessee,US
+mel,melbourne,Australia,Oceania
+hat,medicine hat,Alberta,Canada
+mfr,medford-ashland,Oregon,US
+mdv,meadville,Pennsylvania,US
+mca,mcallen / edinburg,Texas,US
+mzt,mazatlan,Mexico,Latin America and Caribbean
+mto,mattoon-charleston,Illinois,US
+msc,mason city,Iowa,US
+mrs,marseille,France,Europe
+mfd,mansfield,Ohio,US
+mkt,mankato,Minnesota,US
+mnl,manila,Philippines,Asia Pacific and Middle East
+mhk,manhattan KS,Kansas,US
+man,manchester,United Kingdom,Europe
+mly,malaysia,Malaysia,Asia Pacific and Middle East
+agp,malaga,Spain,Europe
+mne,maine,Maine,US
+mdd,madrid,Spain,Europe
+mad,madison,Wisconsin,US
+mcn,macon / warner robins,Georgia,US
+lys,lyon,France,Europe
+lyn,lynchburg,Virginia,US
+lux,luxembourg,Luxembourg,Europe
+lko,lucknow,India,Asia Pacific and Middle East
+lbb,lubbock,Texas,US
+lou,louisville,Kentucky,US
+lax,los angeles,California,US
+isp,long island,New York,US
+lon,london ON,Ontario,Canada
+ldn,london,United Kingdom,Europe
+nte,loire valley,France,Europe
+lgu,logan,Utah,US
+liv,liverpool,United Kingdom,Europe
+lit,little rock,Arkansas,US
+lis,lisbon,Portugal,Europe
+lnk,lincoln,Nebraska,US
+lma,lima / findlay,Ohio,US
+lil,lille,France,Europe
+lex,lexington KY,Kentucky,US
+lws,lewiston / clarkston,Idaho,US
+lth,lethbridge,Alberta,Canada
+lej,leipzig,Germany,Europe
+alt,lehigh valley,Pennsylvania,US
+lds,leeds,United Kingdom,Europe
+law,lawton,Oklahoma,US
+lwr,lawrence,Kansas,US
+lau,lausanne,Switzerland,Europe
+lvg,las vegas,Nevada,US
+lcr,las cruces,New Mexico,US
+lrd,laredo,Texas,US
+lan,lansing,Michigan,US
+lns,lancaster PA,Pennsylvania,US
+lal,lakeland,Florida,US
+loz,lake of the ozarks,Missouri,US
+lkc,lake charles,Louisiana,US
+laf,lafayette / west lafayette,Indiana,US
+lft,lafayette,Louisiana,US
+lsl,la salle co,Illinois,US
+lse,la crosse,Wisconsin,US
+kwi,kuwait,Kuwait,Asia Pacific and Middle East
+koo,kootenays,British Columbia,Canada
+kol,kolkata (calcutta),India,Asia Pacific and Middle East
+okk,kokomo,Indiana,US
+knx,knoxville,Tennessee,US
+klf,klamath falls,Oregon,US
+kch,kitchener-waterloo-cambridge,Ontario,Canada
+krk,kirksville,Missouri,US
+kng,kingston ON,Ontario,Canada
+grk,killeen / temple / ft hood,Texas,US
+cok,kerala,India,Asia Pacific and Middle East
+nbo,kenya,Kenya,Africa
+ken,kent,United Kingdom,Europe
+rac,kenosha-racine,Wisconsin,US
+kpr,kennewick-pasco-richland,Washington,US
+ena,kenai peninsula,Alaska,US
+kel,kelowna / okanagan,British Columbia,Canada
+ksc,kansas city MO,Missouri,US
+kml,kamloops,British Columbia,Canada
+fca,kalispell,Montana,US
+kzo,kalamazoo,Michigan,US
+klt,kaiserslautern,Germany,Europe
+jln,joplin,Missouri,US
+jbr,jonesboro,Arkansas,US
+jnb,johannesburg,South Africa,Africa
+jrs,jerusalem,Israel and Palestine,Asia Pacific and Middle East
+jys,jersey shore,New Jersey,US
+jvl,janesville,Wisconsin,US
+jai,jaipur,India,Asia Pacific and Middle East
+oaj,jacksonville NC,North Carolina,US
+jax,jacksonville,Florida,US
+jxt,jackson TN,Tennessee,US
+jan,jackson MS,Mississippi,US
+jxn,jackson MI,Michigan,US
+ith,ithaca,New York,US
+bgd,iraq,Iraq,Asia Pacific and Middle East
+trh,iran,Iran,Asia Pacific and Middle East
+iac,iowa city,Iowa,US
+inl,inland empire,California,US
+idr,indore,India,Asia Pacific and Middle East
+jkt,indonesia,Indonesia,Asia Pacific and Middle East
+ind,indianapolis,Indiana,US
+imp,imperial county,California,US
+ilo,iloilo,Philippines,Asia Pacific and Middle East
+hyd,hyderabad,India,Asia Pacific and Middle East
+hsv,huntsville / decatur,Alabama,US
+hts,huntington-ashland,West Virginia,US
+hmb,humboldt county,California,US
+hud,hudson valley,New York,US
+hou,houston,Texas,US
+hum,houma,Louisiana,US
+hkz,hong kong,Hong Kong,Asia Pacific and Middle East
+hld,holland,Michigan,US
+hij,hiroshima,Japan,Asia Pacific and Middle East
+hhi,hilton head,South Carolina,US
+rck,high rockies,Colorado,US
+hky,hickory / lenoir,North Carolina,US
+hrm,hermosillo,Mexico,Latin America and Caribbean
+hln,helena,Montana,US
+hdb,heidelberg,Germany,Europe
+cfl,heartland florida,Florida,US
+hnl,hawaii,Hawaii,US
+usm,hattiesburg,Mississippi,US
+htf,hartford,Connecticut,US
+shd,harrisonburg,Virginia,US
+hrs,harrisburg,Pennsylvania,US
+haj,hannover,Germany,Europe
+hgh,hangzhou,China,Asia Pacific and Middle East
+hnf,hanford-corcoran,California,US
+nfk,hampton roads,Virginia,US
+sou,hampshire,United Kingdom,Europe
+hml,hamilton-burlington,Ontario,Canada
+ham,hamburg,Germany,Europe
+hfx,halifax,Nova Scotia,Canada
+hfa,haifa,Israel and Palestine,Asia Pacific and Middle East
+gpt,gulfport / biloxi,Mississippi,US
+gph,guelph,Ontario,Canada
+gua,guatemala,Guatemala,Latin America and Caribbean
+can,guangzhou,China,Asia Pacific and Middle East
+bjx,guanajuato,Mexico,Latin America and Caribbean
+gum,guam-micronesia,Territories,US
+gum,guam-micronesia,Guam,Asia Pacific and Middle East
+gdl,guadalajara,Mexico,Latin America and Caribbean
+gnb,grenoble,France,Europe
+gsp,greenville / upstate,South Carolina,US
+gbo,greensboro,North Carolina,US
+grb,green bay,Wisconsin,US
+ath,greece,Greece,Europe
+gtf,great falls,Montana,US
+grr,grand rapids,Michigan,US
+gil,grand island,Nebraska,US
+gfk,grand forks,North Dakota,US
+grx,granada,Spain,Europe
+gld,gold country,California,US
+ool,gold coast,Australia,Oceania
+goa,goa,India,Asia Pacific and Middle East
+gfl,glens falls,New York,US
+gla,glasgow,United Kingdom,Europe
+acc,ghana,Ghana,Africa
+gen,genoa,Italy,Europe
+gva,geneva,Switzerland,Europe
+gls,galveston,Texas,US
+gnv,gainesville,Florida,US
+anb,gadsden-anniston,Alabama,US
+fuk,fukuoka,Japan,Asia Pacific and Middle East
+fmy,ft myers / SW florida,Florida,US
+fmc,ft mcmurray,Alberta,Canada
+fre,fresno / madera,California,US
+ezf,fredericksburg,Virginia,US
+fdk,frederick,Maryland,US
+abb,fraser valley,British Columbia,Canada
+fra,frankfurt,Germany,Europe
+ftl,fortaleza,Brazil,Latin America and Caribbean
+fwa,fort wayne,Indiana,US
+fsm,fort smith AR,Arkansas,US
+mia,fort lauderdale,Florida,US
+ftd,fort dodge,Iowa,US
+ftc,fort collins / north CO,Colorado,US
+key,florida keys,Florida,US
+flo,florence SC,South Carolina,US
+flr,florence / tuscany,Italy,Europe
+msl,florence / muscle shoals,Alabama,US
+fnt,flint,Michigan,US
+flg,flagstaff / sedona,Arizona,US
+hel,finland,Denmark,Europe
+fgl,finger lakes,New York,US
+fyv,fayetteville AR,Arkansas,US
+fay,fayetteville,North Carolina,US
+fro,faro / algarve,Portugal,Europe
+fnm,farmington NM,New Mexico,US
+far,fargo / moorhead,North Dakota,US
+fai,fairbanks,Alaska,US
+ew,evansville,Indiana,US
+eug,eugene,Oregon,US
+add,ethiopia,Ethiopia,Africa
+esx,essex,United Kingdom,Europe
+ess,essen / ruhr,Germany,Europe
+eri,erie PA,Pennsylvania,US
+elm,elmira-corning,New York,US
+elk,elko,Nevada,US
+sal,el salvador,El Salvador,Latin America and Caribbean
+elp,el paso,Texas,US
+cai,egypt,Egypt,Africa
+edm,edmonton,Alberta,Canada
+edi,edinburgh,United Kingdom,Europe
+qui,ecuador,Ecuador,Latin America and Caribbean
+eau,eau claire,Wisconsin,US
+esh,eastern shore,Maryland,US
+ewv,eastern panhandle,West Virginia,US
+enc,eastern NC,North Carolina,US
+eky,eastern kentucky,Kentucky,US
+nlo,eastern CT,Connecticut,US
+eco,eastern CO,Colorado,US
+eor,east oregon,Oregon,US
+eml,east midlands,United Kingdom,Europe
+eid,east idaho,Idaho,US
+nwh,east anglia,United Kingdom,Europe
+dus,dusseldorf,Germany,Europe
+dur,durban,South Africa,Africa
+dud,dunedin,New Zealand,Oceania
+dnd,dundee,United Kingdom,Europe
+dlh,duluth / superior,Minnesota,US
+dbq,dubuque,Iowa,US
+dub,dublin,Ireland,Europe
+drs,dresden,Germany,Europe
+dhn,dothan AL,Alabama,US
+sdq,dominican republic,Dominican Republic,Latin America and Caribbean
+dvc,devon & cornwall,United Kingdom,Europe
+det,detroit metro,Michigan,US
+dsm,des moines,Iowa,US
+dby,derby,United Kingdom,Europe
+den,denver,Colorado,US
+del,delhi,India,Asia Pacific and Middle East
+dlw,delaware,Delaware,US
+drt,del rio / eagle pass,Texas,US
+och,deep east texas,Texas,US
+dil,decatur IL,Illinois,US
+dab,daytona beach,Florida,US
+day,dayton / springfield,Ohio,US
+dvo,davao city,Philippines,Asia Pacific and Middle East
+drw,darwin,Australia,Oceania
+dnv,danville,Virginia,US
+dal,dallas / fort worth,Texas,US
+dlc,dalian,China,Asia Pacific and Middle East
+prg,Czech Republic/prague,Czech Republic,Europe
+cwb,curitiba,Brazil,Latin America and Caribbean
+cbg,cumberland valley,Pennsylvania,US
+zag,croatia,Croatia,Europe
+cov,coventry,United Kingdom,Europe
+cri,costa rica,Costa Rica,Latin America and Caribbean
+crv,corvallis/albany,Oregon,US
+crp,corpus christi,Texas,US
+ycc,cornwall ON,Ontario,Canada
+cop,copenhagen,Denmark,Europe
+coo,cookeville,Tennessee,US
+cmx,comox valley,British Columbia,Canada
+csg,columbus GA,Georgia,US
+col,columbus,Ohio,US
+cae,columbia SC,South Carolina,US
+cou,columbia / jeff city,Missouri,US
+cos,colorado springs,Colorado,US
+bog,colombia,Colombia,Latin America and Caribbean
+cgn,cologne,Germany,Europe
+cst,college station,Texas,US
+cvn,clovis / portales,New Mexico,US
+cle,cleveland,Ohio,US
+ckv,clarksville TN,Tennessee,US
+cjs,ciudad juarez,Mexico,Latin America and Caribbean
+cin,cincinnati OH,Ohio,US
+chr,christchurch,New Zealand,Oceania
+ckg,chongqing,China,Asia Pacific and Middle East
+chl,chillicothe,Ohio,US
+scl,chile,Chile,Latin America and Caribbean
+chh,chihuahua,Mexico,Latin America and Caribbean
+chc,chico,California,US
+chi,chicago,Illinois,US
+che,chennai (madras),India,Asia Pacific and Middle East
+ctu,chengdu,China,Asia Pacific and Middle East
+chq,chautauqua,New York,US
+cht,chattanooga,Tennessee,US
+chk,chatham-kent,Ontario,Canada
+uva,charlottesville,Virginia,US
+cha,charlotte,North Carolina,US
+crw,charleston WV,West Virginia,US
+chs,charleston SC,South Carolina,US
+ixc,chandigarh,India,Asia Pacific and Middle East
+chm,champaign urbana,Illinois,US
+cnj,central NJ,New Jersey,US
+cmu,central michigan,Michigan,US
+aex,central louisiana,Louisiana,US
+ced,cedar rapids,Iowa,US
+ceb,cebu,Philippines,Asia Pacific and Middle East
+cat,catskills,New York,US
+cbo,cariboo,British Columbia,Canada
+crb,caribbean islands,Caribbean Islands,Latin America and Caribbean
+cym,cardiff / wales,United Kingdom,Europe
+cpt,cape town,South Africa,Africa
+cap,cape cod / islands,Massachusetts,US
+cbr,canberra,Australia,Oceania
+tfn,canarias,Spain,Europe
+cam,cambridge UK,United Kingdom,Europe
+clg,calgary,Alberta,Canada
+cns,cairns,Australia,Oceania
+cdo,cagayan de oro,Philippines,Asia Pacific and Middle East
+cdz,cadiz,Spain,Europe
+btm,butte,Montana,US
+sof,bulgaria,Bulgaria,Europe
+buf,buffalo,New York,US
+bue,buenos aires,Argentina,Latin America and Caribbean
+bud,budapest,Hungary,Europe
+bwk,brunswick GA,Georgia,US
+bro,brownsville,Texas,US
+rns,brittany,France,Europe
+brs,bristol,United Kingdom,Europe
+bne,brisbane,Australia,Oceania
+bri,brighton,United Kingdom,Europe
+brm,bremen,Germany,Europe
+bsb,brasilia,Brazil,Latin America and Caribbean
+bfd,brantford-woodstock,Ontario,Canada
+brd,brainerd,Minnesota,US
+bzn,bozeman,Montana,US
+blg,bowling green,Kentucky,US
+bou,boulder,Colorado,US
+bos,boston,Massachusetts,US
+bod,bordeaux,France,Europe
+bnc,boone,North Carolina,US
+blg,bologna,Italy,Europe
+lpb,bolivia,Bolivia,Latin America and Caribbean
+boi,boise,Idaho,US
+bmg,bloomington IN,Indiana,US
+bln,bloomington-normal,Illinois,US
+bis,bismarck,North Dakota,US
+bhm,birmingham AL,Alabama,US
+bhx,birmingham / west mids,United Kingdom,Europe
+bgm,binghamton,New York,US
+bil,billings,Montana,US
+bio,bilbao,Spain,Europe
+wnp,bicol region,Philippines,Asia Pacific and Middle East
+bbi,bhubaneswar,India,Asia Pacific and Middle East
+brn,bern,Switzerland,Europe
+ber,berlin,Germany,Europe
+bnd,bend,Oregon,US
+bji,bemidji,Minnesota,US
+cnf,belo horizonte,Brazil,Latin America and Caribbean
+bli,bellingham,Washington,US
+bel,belleville ON,Ontario,Canada
+bru,belgium,Belgium,Europe
+blf,belfast,United Kingdom,Europe
+bey,beirut lebanon,Lebanon,Asia Pacific and Middle East
+pek,beijing,China,Asia Pacific and Middle East
+bpt,beaumont / port arthur,Texas,US
+btc,battle creek,Michigan,US
+btr,baton rouge,Louisiana,US
+bth,bath,United Kingdom,Europe
+bsl,basel,Switzerland,Europe
+brr,barrie,Ontario,Canada
+bar,barcelona,Spain,Europe
+bgl,bangladesh,Bangladesh,Asia Pacific and Middle East
+bng,bangalore,India,Asia Pacific and Middle East
+bal,baltimore,Maryland,US
+ibz,baleares,Spain,Europe
+bak,bakersfield,California,US
+bcs,baja california sur,Mexico,Latin America and Caribbean
+bcd,bacolod,Philippines,Asia Pacific and Middle East
+vie,austria/vienna,Austria,Europe
+aus,austin,Texas,US
+aug,augusta,Georgia,US
+akl,auckland NZ,New Zealand,Oceania
+aub,auburn,Alabama,US
+atl,atlanta,Georgia,US
+ohu,athens OH,Ohio,US
+ahn,athens GA,Georgia,US
+jfn,ashtabula,Ohio,US
+ash,asheville,North Carolina,US
+app,appleton-oshkosh-FDL,Wisconsin,US
+anp,annapolis,Maryland,US
+aaa,ann arbor,Michigan,US
+anc,anchorage / mat-su,Alaska,US
+ams,amsterdam / randstad,Netherlands,Europe
+ame,ames IA,Iowa,US
+ama,amarillo,Texas,US
+aoo,altoona-johnstown,Pennsylvania,US
+alc,alicante,Spain,Europe
+abq,albuquerque,New Mexico,US
+aby,albany GA,Georgia,US
+alb,albany,New York,US
+cak,akron / canton,Ohio,US
+amd,ahmedabad,India,Asia Pacific and Middle East
+adl,adelaide,Australia,Oceania
+aca,acapulco,Mexico,Latin America and Caribbean
+abi,abilene,Texas,US
+abz,aberdeen,United Kingdom,Europe

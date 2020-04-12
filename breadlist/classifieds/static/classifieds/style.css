@@ -63,3 +63,6 @@ h2 {
   height: 150px;
   width: 150px;
 }
+li {
+  list-style-type: none;
+}

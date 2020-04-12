@@ -1,18 +1,22 @@
 from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from django.template import loader
-from .models import Classified, Page, Locale, Section, Subsection
+from .models import Classified, Page, Locale, Section, Subsection, Province, Region
 
 def index(request):
     locale_list = Locale.objects.order_by('pk')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'page_list': page_list,
         'locale_list': locale_list,
         'section_list': section_list,
-        'subsection_list': subsection_list
+        'subsection_list': subsection_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/index.html', context)
 
@@ -21,12 +25,16 @@ def locale_index(request, locale):
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'locale': locale,
         'page_list': page_list,
         'locale_list': locale_list,
         'section_list': section_list,
-        'subsection_list': subsection_list
+        'subsection_list': subsection_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/locale-index.html', context)
 
@@ -36,6 +44,8 @@ def section_index(request, locale, section):
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'locale': locale,
         'section': section,
@@ -43,7 +53,9 @@ def section_index(request, locale, section):
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
-        'section_classified_list': section_classified_list
+        'section_classified_list': section_classified_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/section-index.html', context)
 
@@ -53,6 +65,8 @@ def subsection_index(request, locale, section, subsection):
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'page_list': page_list,
         'locale': locale,
@@ -61,7 +75,9 @@ def subsection_index(request, locale, section, subsection):
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
-        'subsection_classified_list': subsection_classified_list
+        'subsection_classified_list': subsection_classified_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/subsection-index.html', context)
 
@@ -71,6 +87,8 @@ def detail(request, locale, section, subsection, classified_id):
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'classified': classified,
         'locale': locale,
@@ -80,6 +98,8 @@ def detail(request, locale, section, subsection, classified_id):
         'section_list': section_list,
         'subsection_list': subsection_list,
         'page_list': page_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/detail.html', context)
 
@@ -89,12 +109,16 @@ def page(request, page_name):
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
+    province_list = Province.objects.order_by('pk')
+    region_list = Region.objects.order_by('pk')
     context = {
         'page': page,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
         'page_list': page_list,
+        'province_list': province_list,
+        'region_list': region_list,
     }
     return render(request, 'classifieds/page.html', context)
 

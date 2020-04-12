@@ -14,9 +14,9 @@
       <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for p in page_list %}
       <li id={{ p }}><a href="{% url 'classifieds:page' p.page_name %}">{{ p }}</a></li>{% endfor %}
     </nav>
-    <main>{% for locale in locale_list %}
-      <section id={{ locale }}>
-        <h3 class="locale"><a href="{% url 'classifieds:locale' locale %}">{{ locale }}</a></h3>
+    <main>{% for l in locale_list %}
+      <section id={{ l.region }}>
+        <h3 class="locale"><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></h3>
       </section>{% endfor %}
     </main>
     <aside>{% for l in locale_list %}

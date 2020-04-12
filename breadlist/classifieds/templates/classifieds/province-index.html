@@ -19,8 +19,8 @@
         <li><a href="{% url 'classifieds:locale' l.abbreviation %}">{{ l }}</a></li>
       </section>{% endfor %}
     </main>
-    <aside>{% for l in locale_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l.abbreviation %}">{{ l }}</a></li>{% endfor %}
+    <aside>{% for r in region_list %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
     </aside>
     <footer>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>

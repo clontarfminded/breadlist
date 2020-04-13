@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h2><a href="{% url 'classifieds:locale' locale %}">{{ locale }}</a></h2>
+      <h2><a href="{% url 'classifieds:locale' locale %}">{{ locale.locale_name }}</a></h2>
       <h3>{{ section }}</h3>
     </header>
     <nav>
@@ -26,7 +26,7 @@
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
     </aside>
     <footer>
-      <li><a href="{% url 'classifieds:locale' locale.abbreviation %}">back to {{ locale }}</a></li>
+      <li><a href="{% url 'classifieds:locale' locale %}">back to {{ locale }}</a></li>
       <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
     </footer>
   </body>

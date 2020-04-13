@@ -113,6 +113,7 @@ def region(request, region_name):
     region_list = Region.objects.order_by('pk')
     context = {
         'page': page,
+        'region_name': region_name,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -132,6 +133,7 @@ def province(request, province_name):
     province_list = Province.objects.order_by('pk')
     region_list = Region.objects.order_by('pk')
     context = {
+        'province_name': province_name,
         'page': page,
         'locale_list': locale_list,
         'section_list': section_list,

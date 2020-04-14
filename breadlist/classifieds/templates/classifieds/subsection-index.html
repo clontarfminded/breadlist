@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h2><a href="{% url 'classifieds:locale' locale.abbreviation %}"> {{ locale.locale_name }} </a></h2>
+      <h2><a href="{% url 'classifieds:locale' locale %}"> {{ locale.locale_name }} </a></h2>
       <h3><a href="{% url 'classifieds:section' locale section %}"> {{ section }}: </a></h3>
       <h4>{{ subsection }}</h4>
     </header>

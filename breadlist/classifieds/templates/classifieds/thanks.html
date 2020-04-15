@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Breadlist: {{ region_name }}</title>{% load static %}
+    <title>Thanks</title>{% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'classifieds/style.css' %}">
   </head>
   <body>
     <header>
-      <h2>{{ region_name }}</h2>
+      <h2>Thanks</h2>
     </header>
     <nav>
       <img id="kropotkin" src="{% static "classifieds/images/kropotkin.jpg" %}" alt="the face of peter kropotkin done in a woodblock style"></img>
@@ -15,10 +15,8 @@
       <p><a href="{% url 'classifieds:create_classified' %}">create a classified</a></p>{% for p in page_list %}
       <li id={{ p }}><a href="{% url 'classifieds:page' p.page_name %}">{{ p }}</a></li>{% endfor %}
     </nav>
-    <main>{% for p in province_list_sorted %}
-      <section>
-        <li><a href="{% url 'classifieds:province' p %}">{{ p }}</a></li>
-      </section>{% endfor %}
+    <main>
+      <p>thanks for posting!</p>
     </main>
     <aside>{% for r in region_list %}
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}

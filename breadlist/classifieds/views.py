@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.template import loader
 from .models import Classified, Page, Locale, Section, Subsection, Province, Region
 from .forms import CreateClassifiedForm
@@ -22,6 +22,7 @@ def index(request):
     return render(request, 'classifieds/index.html', context)
 
 def locale_index(request, locale):
+    l = get_object_or_404(Locale, locale_name=locale)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -40,6 +41,8 @@ def locale_index(request, locale):
     return render(request, 'classifieds/locale-index.html', context)
 
 def section_index(request, locale, section):
+    l = get_object_or_404(Locale, locale_name=locale)
+    s = get_object_or_404(Section, section_name=section)
     section_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).order_by('datetime_created')
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -61,6 +64,9 @@ def section_index(request, locale, section):
     return render(request, 'classifieds/section-index.html', context)
 
 def subsection_index(request, locale, section, subsection):
+    l = get_object_or_404(Locale, locale_name=locale)
+    s = get_object_or_404(Section, section_name=section)
+    ss = get_object_or_404(Subsection, subsection_name=subsection)
     subsection_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).filter(subsection__subsection_name=subsection).order_by('datetime_created')
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -83,6 +89,10 @@ def subsection_index(request, locale, section, subsection):
     return render(request, 'classifieds/subsection-index.html', context)
 
 def detail(request, locale, section, subsection, classified_id):
+    l = get_object_or_404(Locale, locale_name=locale)
+    s = get_object_or_404(Section, section_name=section)
+    ss = get_object_or_404(Subsection, subsection_name=subsection)
+    c = get_object_or_404(Classified, pk=classified_id)
     classified = get_object_or_404(Classified, pk=classified_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -105,6 +115,7 @@ def detail(request, locale, section, subsection, classified_id):
     return render(request, 'classifieds/detail.html', context)
 
 def region(request, region_name):
+    r = get_object_or_404(Region, region_name=region_name)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -126,6 +137,7 @@ def region(request, region_name):
     return render(request, 'classifieds/region-index.html', context)
 
 def province(request, province_name):
+    p = get_object_or_404(Province, province_name=province_name)
     locale_list = Locale.objects.order_by('locale_name')
     locale_list_sorted = Locale.objects.filter(province__province_name=province_name).order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -195,7 +207,7 @@ def create_classified(request):
             form.save()
             return HttpResponseRedirect('/thanks/')
     else:
-        form = CreateClassifiedForm()
+        form = CreateClassifiedForm().as_ul()
     context = {
         'form': form,
         'locale_list': locale_list,

@@ -11,7 +11,8 @@
     </header>
     <nav>
       <img id="kropotkin" src="{% static "classifieds/images/kropotkin.jpg" %}" alt="the face of peter kropotkin done in a woodblock style"></img>
-      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for page in page_list %}
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
+      <p><a href="{% url 'classifieds:create_classified' %}">create a classified</a></p>{% for page in page_list %}
       <li id={{ page }}><a href="{% url 'classifieds:page' page %}">{{ page }}</a></li>{% endfor %}
     </nav>
     <main>

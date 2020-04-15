@@ -11,9 +11,9 @@
     </header>
     <nav>
       <img id="kropotkin" src="{% static "classifieds/images/kropotkin.jpg" %}" alt="the face of peter kropotkin done in a woodblock style"></img>
-      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>{% for p in page_list %}
+      <h1><a href="{% url 'classifieds:index' %}">Breadlist</a></h1>
+      <p><a href="{% url 'classifieds:create_classified' %}">create a classified</a></p>{% for p in page_list %}
       <li id={{ p }}><a href="{% url 'classifieds:page' p.page_name %}">{{ p }}</a></li>{% endfor %}
-      <p><a href="{% url 'classifieds:create_classified' %}">Create a Classified</a></p>
     </nav>
     <main>{% for r in region_list %}
       <section id={{ r }}>

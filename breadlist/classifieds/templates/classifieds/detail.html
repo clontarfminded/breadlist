@@ -17,8 +17,8 @@
     <main>
       <p>{{ classified.classified_text }}</p>
     </main>
-    <aside>{% for l in locale_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></li>{% endfor %}
+    <aside>{% for r in region_list %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
     </aside>
     <footer>
       <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ subsection }}</a></li>

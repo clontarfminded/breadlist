@@ -19,7 +19,7 @@
     <main>{% if section_classified_list %}
       <ul>
       {% for c in section_classified_list %}
-          <li><a href="{% url 'classifieds:detail' locale section subsection c.id %}">{{ c }}</a></li>{% endfor %}
+          <li><a href="{% url 'classifieds:detail' c.id %}">{{ c }}</a></li>{% endfor %}
       </ul>{% else %}
       <p>No classifieds are available.</p>{% endif %}
     </main>

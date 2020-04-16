@@ -17,7 +17,7 @@
     </nav>
     <main>{% for l in locale_list_sorted %}
       <section>
-        <li><a href="{% url 'classifieds:locale' l %}">{{ l }}</a></li>
+        <li><a href="{% url 'classifieds:locale' l.locale_name %}">{{ l }}</a></li>
       </section>{% endfor %}
     </main>
     <aside>{% for r in region_list %}

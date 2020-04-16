@@ -21,8 +21,8 @@ def index(request):
     }
     return render(request, 'classifieds/index.html', context)
 
-def locale_index(request, locale):
-    l = get_object_or_404(Locale, locale_name=locale)
+def locale_index(request, locale_name):
+    l = get_object_or_404(Locale, locale_name=locale_name)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -30,7 +30,7 @@ def locale_index(request, locale):
     province_list = Province.objects.order_by('pk')
     region_list = Region.objects.order_by('pk')
     context = {
-        'locale': locale,
+        'locale': l,
         'page_list': page_list,
         'locale_list': locale_list,
         'section_list': section_list,
@@ -88,11 +88,7 @@ def subsection_index(request, locale, section, subsection):
     }
     return render(request, 'classifieds/subsection-index.html', context)
 
-def detail(request, locale, section, subsection, classified):
-    l = get_object_or_404(Locale, locale_name=locale)
-    s = get_object_or_404(Section, section_name=section)
-    ss = get_object_or_404(Subsection, subsection_name=subsection)
-    c = get_object_or_404(Classified, classified_title=classified)
+def detail(request, classified_id):
     classified = get_object_or_404(Classified, pk=classified_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -102,9 +98,6 @@ def detail(request, locale, section, subsection, classified):
     region_list = Region.objects.order_by('pk')
     context = {
         'classified': classified,
-        'locale': locale,
-        'section': section,
-        'subsection': subsection,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,

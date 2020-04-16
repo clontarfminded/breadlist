@@ -88,11 +88,11 @@ def subsection_index(request, locale, section, subsection):
     }
     return render(request, 'classifieds/subsection-index.html', context)
 
-def detail(request, locale, section, subsection, classified_id):
+def detail(request, locale, section, subsection, classified):
     l = get_object_or_404(Locale, locale_name=locale)
     s = get_object_or_404(Section, section_name=section)
     ss = get_object_or_404(Subsection, subsection_name=subsection)
-    c = get_object_or_404(Classified, pk=classified_id)
+    c = get_object_or_404(Classified, classified_title=classified)
     classified = get_object_or_404(Classified, pk=classified_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
@@ -208,13 +208,13 @@ def create_classified(request):
             return HttpResponseRedirect('/thanks/')
     else:
         form = CreateClassifiedForm().as_ul()
-    context = {
-        'form': form,
-        'locale_list': locale_list,
-        'section_list': section_list,
-        'subsection_list': subsection_list,
-        'page_list': page_list,
-        'province_list': province_list,
-        'region_list': region_list,
-    }
+        context = {
+            'form': form,
+            'locale_list': locale_list,
+            'section_list': section_list,
+            'subsection_list': subsection_list,
+            'page_list': page_list,
+            'province_list': province_list,
+            'region_list': region_list,
+        }
     return render(request, 'classifieds/create-classified.html', context)

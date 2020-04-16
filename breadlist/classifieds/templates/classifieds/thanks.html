@@ -17,6 +17,7 @@
     </nav>
     <main>
       <p>thanks for posting!</p>
+      <p>{{ form }}</p>
     </main>
     <aside>{% for r in region_list %}
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}

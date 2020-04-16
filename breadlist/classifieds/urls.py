@@ -13,6 +13,6 @@ urlpatterns = [
     path('<locale>/', views.locale_index, name='locale'),
     path('<locale>/<str:section>/', views.section_index, name='section'),
     path('<locale>/<str:section>/<str:subsection>', views.subsection_index, name='subsection'),
-    path('<locale>/<str:section>/<str:subsection>/<int:classified_id>', views.detail, name='detail'),
+    path('<locale>/<str:section>/<str:subsection>/<str:clasified_title>', views.detail, name='detail'),
 
 ]

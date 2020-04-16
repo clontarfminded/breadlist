@@ -23,6 +23,8 @@ def index(request):
 
 def locale_index(request, locale_name):
     l = get_object_or_404(Locale, locale_name=locale_name)
+    r = get_object_or_404(Region, pk=l.region_id)
+    p = get_object_or_404(Province, pk=l.province_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -31,6 +33,8 @@ def locale_index(request, locale_name):
     region_list = Region.objects.order_by('pk')
     context = {
         'locale': l,
+        'region': r,
+        'province': p,
         'page_list': page_list,
         'locale_list': locale_list,
         'section_list': section_list,
@@ -51,7 +55,7 @@ def section_index(request, locale, section):
     province_list = Province.objects.order_by('pk')
     region_list = Region.objects.order_by('pk')
     context = {
-        'locale': locale,
+        'locale': l,
         'section': section,
         'page_list': page_list,
         'locale_list': locale_list,
@@ -76,9 +80,9 @@ def subsection_index(request, locale, section, subsection):
     region_list = Region.objects.order_by('pk')
     context = {
         'page_list': page_list,
-        'locale': locale,
-        'section': section,
-        'subsection': subsection,
+        'locale': l,
+        'section': s,
+        'subsection': ss,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -90,6 +94,7 @@ def subsection_index(request, locale, section, subsection):
 
 def detail(request, classified_id):
     classified = get_object_or_404(Classified, pk=classified_id)
+    l = get_object_or_404(Locale, pk=classified.locale_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -98,6 +103,7 @@ def detail(request, classified_id):
     region_list = Region.objects.order_by('pk')
     context = {
         'classified': classified,
+        'locale': l,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -107,18 +113,17 @@ def detail(request, classified_id):
     }
     return render(request, 'classifieds/detail.html', context)
 
-def region(request, region_name):
-    r = get_object_or_404(Region, region_name=region_name)
+def region(request, region_id):
+    r = get_object_or_404(Region, pk=region_id)
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
     province_list = Province.objects.order_by('pk')
-    province_list_sorted = Province.objects.filter(region__region_name=region_name).order_by('province_name')
+    province_list_sorted = Province.objects.filter(region_id=region_id).order_by('province_name')
     region_list = Region.objects.order_by('pk')
     context = {
-        'page': page,
-        'region_name': region_name,
+        'region': r,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,
@@ -129,18 +134,18 @@ def region(request, region_name):
     }
     return render(request, 'classifieds/region-index.html', context)
 
-def province(request, province_name):
-    p = get_object_or_404(Province, province_name=province_name)
+def province(request, province_id):
+    p = get_object_or_404(Province, pk=province_id)
     locale_list = Locale.objects.order_by('locale_name')
-    locale_list_sorted = Locale.objects.filter(province__province_name=province_name).order_by('locale_name')
+    locale_list_sorted = Locale.objects.filter(province_id=province_id).order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
     page_list = Page.objects.order_by('pk')
     province_list = Province.objects.order_by('pk')
     region_list = Region.objects.order_by('pk')
     context = {
-        'province_name': province_name,
-        'page': page,
+        'province': p,
+        'region': p.region,
         'locale_list': locale_list,
         'section_list': section_list,
         'subsection_list': subsection_list,

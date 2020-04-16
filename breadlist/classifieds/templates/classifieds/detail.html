@@ -19,12 +19,15 @@
       <p>{{ classified.classified_text }}</p>
     </main>
     <aside>{% for r in region_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></li>{% endfor %}
     </aside>
     <footer>
-      <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">back to {{ subsection }}</a></li>
-      <li><a href="{% url 'classifieds:section' classified.locale classified.section %}">back to {{ section }}</a></li>
-      <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+      <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
+      <li><a href="{% url 'classifieds:region' locale.region_id %}">breadlist/{{ locale.region }}</a></li>
+      <li><a href="{% url 'classifieds:province' locale.province_id %}">breadlist/{{ locale.region }}/{{ locale.province }}</a></li>
+      <li><a href="{% url 'classifieds:locale' locale.locale_name %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
+      <li><a href="{% url 'classifieds:section' locale.locale_name classified.section %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}/{{ classified.section }}</a></li>
+      <li><a href="{% url 'classifieds:subsection' classified.locale classified.section classified.subsection %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ classified.locale }}/{{ classified.section }}/{{ classified.subsection }}</a></li>
     </footer>
   </body>
 </html>

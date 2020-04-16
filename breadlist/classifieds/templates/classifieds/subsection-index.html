@@ -24,10 +24,15 @@
     <p>No classifieds are available.</p>{% endif %}
     </main>
     <aside>{% for r in region_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></li>{% endfor %}
     </aside>
     <footer>
-      <li><a href="{% url 'classifieds:index' %}">back to index</a></li>
+      <ul>
+        <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
+        <li><a href="{% url 'classifieds:region' locale.region_id %}">breadlist/{{ locale.region }}</a></li>
+        <li><a href="{% url 'classifieds:province' locale.province_id %}">breadlist/{{ locale.region }}/{{ locale.province }}</a></li>
+        <li><a href="{% url 'classifieds:locale' locale.locale_name %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
+        <li><a href="{% url 'classifieds:section' locale.locale_name section.section_name %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}/{{ section }}</a></li>
     </footer>
   </body>
 </html>

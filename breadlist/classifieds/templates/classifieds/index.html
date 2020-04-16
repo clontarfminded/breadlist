@@ -16,12 +16,12 @@
       <li id={{ p }}><a href="{% url 'classifieds:page' p.page_name %}">{{ p }}</a></li>{% endfor %}
     </nav>
     <main>{% for r in region_list %}
-      <section id={{ r }}>
-        <h3 class="region"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></h3>
+      <section id="{{ r }}">
+        <h3 class="region"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></h3>
       </section>{% endfor %}
     </main>
     <aside>{% for r in region_list %}
-        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
+        <li class="sidebar-locale"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></li>{% endfor %}
     </aside>
   </body>
 </html>

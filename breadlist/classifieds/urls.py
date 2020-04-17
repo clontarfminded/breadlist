@@ -11,7 +11,7 @@ urlpatterns = [
     path('pages/<str:page_name>/', views.page, name='page'),
     path('regions/<region_id>', views.region, name='region'),
     path('provinces/<province_id>', views.province, name='province'),
-    path('<str:locale_name>/', views.locale_index, name='locale'),
-    path('<locale>/<str:section>/', views.section_index, name='section'),
-    path('<locale>/<str:section>/<str:subsection>', views.subsection_index, name='subsection'),
+    path('locales/<locale_id>/', views.locale_index, name='locale'),
+    path('<locale_id>/<str:section>/', views.section_index, name='section'),
+    path('<locale_id>/<str:section>/<str:subsection>', views.subsection_index, name='subsection'),
 ]

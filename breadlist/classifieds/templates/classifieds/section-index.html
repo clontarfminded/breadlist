@@ -30,7 +30,7 @@
       <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
       <li><a href="{% url 'classifieds:region' locale.region_id %}">breadlist/{{ locale.region }}</a></li>
       <li><a href="{% url 'classifieds:province' locale.province_id %}">breadlist/{{ locale.region }}/{{ locale.province }}</a></li>
-      <li><a href="{% url 'classifieds:locale' locale %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
+      <li><a href="{% url 'classifieds:locale' locale.id %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
     </footer>
   </body>
 </html>

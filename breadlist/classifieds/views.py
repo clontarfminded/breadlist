@@ -21,8 +21,8 @@ def index(request):
     }
     return render(request, 'classifieds/index.html', context)
 
-def locale_index(request, locale_name):
-    l = get_object_or_404(Locale, locale_name=locale_name)
+def locale_index(request, locale_id):
+    l = get_object_or_404(Locale, pk=locale_id)
     r = get_object_or_404(Region, pk=l.region_id)
     p = get_object_or_404(Province, pk=l.province_id)
     locale_list = Locale.objects.order_by('locale_name')
@@ -44,10 +44,10 @@ def locale_index(request, locale_name):
     }
     return render(request, 'classifieds/locale-index.html', context)
 
-def section_index(request, locale, section):
-    l = get_object_or_404(Locale, locale_name=locale)
+def section_index(request, locale_id, section):
+    l = get_object_or_404(Locale, pk=locale_id)
     s = get_object_or_404(Section, section_name=section)
-    section_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).order_by('datetime_created')
+    section_classified_list = Classified.objects.filter(locale_id=locale_id).filter(section__section_name=section).order_by('datetime_created')
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')
@@ -67,11 +67,11 @@ def section_index(request, locale, section):
     }
     return render(request, 'classifieds/section-index.html', context)
 
-def subsection_index(request, locale, section, subsection):
-    l = get_object_or_404(Locale, locale_name=locale)
+def subsection_index(request, locale_id, section, subsection):
+    l = get_object_or_404(Locale, pk=locale_id)
     s = get_object_or_404(Section, section_name=section)
     ss = get_object_or_404(Subsection, subsection_name=subsection)
-    subsection_classified_list = Classified.objects.filter(locale__locale_name=locale).filter(section__section_name=section).filter(subsection__subsection_name=subsection).order_by('datetime_created')
+    subsection_classified_list = Classified.objects.filter(locale_id=locale_id).filter(section__section_name=section).filter(subsection__subsection_name=subsection).order_by('datetime_created')
     locale_list = Locale.objects.order_by('locale_name')
     section_list = Section.objects.order_by('pk')
     subsection_list = Subsection.objects.order_by('pk')

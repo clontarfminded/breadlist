@@ -18,10 +18,10 @@
     <main>
       {% for s in section_list %}
       <section class={{ s }}>
-        <h3 class="section"><a href="{% url 'classifieds:section' locale s %}">{{ s }}</a></h3>
+        <h3 class="section"><a href="{% url 'classifieds:section' locale.id s %}">{{ s }}</a></h3>
         <ul>
           {% for ss in subsection_list %}
-          <li class="subsection"><a href="{% url 'classifieds:subsection' locale s ss %}">{{ ss }}</a></li>{% endfor %}
+          <li class="subsection"><a href="{% url 'classifieds:subsection' locale.id s ss %}">{{ ss }}</a></li>{% endfor %}
         </ul>
       </section>{% endfor %}
     </main>

@@ -22,8 +22,10 @@
         <h3 class="region"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></h3>
       </section>{% endfor %}
     </main>
-    <aside>{% for r in region_list %}
+    <aside>
+      <ul>{% for r in region_list %}
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></li>{% endfor %}
+      </ul>
     </aside>
   </body>
 </html>

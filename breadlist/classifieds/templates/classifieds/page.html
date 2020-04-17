@@ -20,11 +20,15 @@
     <main>
       <p>{{ page.page_text }}</p>
     </main>
-    <aside>{% for r in region_list %}
+    <aside>
+      <ul>{% for r in region_list %}
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r.id %}">{{ r }}</a></li>{% endfor %}
+      </ul>
     </aside>
     <footer>
-      <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
+      <ul>
+        <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
+      </ul>
     </footer>
   </body>
 </html>

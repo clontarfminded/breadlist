@@ -21,8 +21,10 @@
       <p>thanks for posting!</p>
       <p>{{ form }}</p>
     </main>
-    <aside>{% for r in region_list %}
+    <aside>
+      <ul>{% for r in region_list %}
         <li class="sidebar-locale"><a href="{% url 'classifieds:region' r %}">{{ r }}</a></li>{% endfor %}
+      </ul>
     </aside>
     <footer>
       <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>

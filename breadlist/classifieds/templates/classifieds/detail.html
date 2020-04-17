@@ -26,12 +26,14 @@
       </ul>
     </aside>
     <footer>
-      <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
-      <li><a href="{% url 'classifieds:region' locale.region_id %}">breadlist/{{ locale.region }}</a></li>
-      <li><a href="{% url 'classifieds:province' locale.province_id %}">breadlist/{{ locale.region }}/{{ locale.province }}</a></li>
-      <li><a href="{% url 'classifieds:locale' locale.id %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
-      <li><a href="{% url 'classifieds:section' locale.id classified.section %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}/{{ classified.section }}</a></li>
-      <li><a href="{% url 'classifieds:subsection' classified.locale_id classified.section classified.subsection %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ classified.locale }}/{{ classified.section }}/{{ classified.subsection }}</a></li>
+      <ul>
+        <li><a href="{% url 'classifieds:index' %}">breadlist</a></li>
+        <li><a href="{% url 'classifieds:region' locale.region_id %}">breadlist/{{ locale.region }}</a></li>
+        <li><a href="{% url 'classifieds:province' locale.province_id %}">breadlist/{{ locale.region }}/{{ locale.province }}</a></li>
+        <li><a href="{% url 'classifieds:locale' locale.id %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}</a></li>
+        <li><a href="{% url 'classifieds:section' locale.id classified.section %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ locale }}/{{ classified.section }}</a></li>
+        <li><a href="{% url 'classifieds:subsection' classified.locale_id classified.section classified.subsection %}">breadlist/{{ locale.region }}/{{ locale.province }}/{{ classified.locale }}/{{ classified.section }}/{{ classified.subsection }}</a></li>
+      </ul>
     </footer>
   </body>
 </html>

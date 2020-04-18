@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <h2><a href="{% url 'classifieds:locale' locale %}">{{ locale.locale_name }}</a></h2>
+      <h2><a href="{% url 'classifieds:locale' locale.id %}">{{ locale.locale_name }}</a></h2>
       <h3>{{ section }}</h3>
     </header>
     <nav>
@@ -21,7 +21,7 @@
     <main>{% if section_classified_list %}
       <ul>
       {% for c in section_classified_list %}
-          <li><a href="{% url 'classifieds:detail' c.id %}">{{ c }}</a></li>{% endfor %}
+          <li><a href="{% url 'classifieds:detail' c.id %}">{{ c.subsection }}: {{ c }}</a></li>{% endfor %}
       </ul>{% else %}
       <p>No classifieds are available.</p>{% endif %}
     </main>
